@@ -7,5 +7,19 @@
 
 import Foundation
 
-print("Hello, World!")
+// 생성한 클래스를 이용하여 연산을 진행하고 출력
+let calculator = Calculator()
 
+// 숫자1
+var num1 = 10
+// 숫자2
+var num2 = 5
+
+// 더하기
+print(calculator.plus(num1, num2))
+// 뺴기
+print(calculator.minus(num1, num2))
+// 나누기
+print(calculator.division(num1, num2))
+// 곱하기
+print(calculator.multiplication(num1, num2))
