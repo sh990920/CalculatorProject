@@ -13,7 +13,7 @@ let calculator = Calculator()
 // 숫자1
 var num1 = 10
 // 숫자2
-var num2 = 5
+var num2 = 3
 
 // 더하기
 print(calculator.plus(num1, num2))
@@ -23,3 +23,6 @@ print(calculator.minus(num1, num2))
 print(calculator.division(num1, num2))
 // 곱하기
 print(calculator.multiplication(num1, num2))
+
+// Lv2 나머지 연산 출력
+print(calculator.remainder(num1, num2))

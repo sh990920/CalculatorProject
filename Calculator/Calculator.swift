@@ -27,4 +27,12 @@ class Calculator {
     func multiplication(_ num1: Int, _ num2: Int) -> Int {
         return num1 * num2
     }
+    
+    // Lv2
+    // Lv1에서 만든 Calculator 클래스에 “나머지 연산”이 가능하도록 코드를 추가하고, 연산 진행 후 출력
+    
+    // 나머지 연산
+    func remainder(_ num1: Int, _ num2: Int) -> Int {
+        return num1 % num2
+    }
 }
