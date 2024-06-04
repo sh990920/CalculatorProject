@@ -23,22 +23,22 @@ class Calculator {
     // 더하기
     func plus() {
         let addOperation = AddOperation(num1, num2)
-        print("덧셈 결과 : \(addOperation.add())")
+        print("덧셈 결과 : \(addOperation.calculation())")
     }
     // 빼기
     func minus() {
         let substractOperation = SubstractOperation(num1, num2)
-        print("뺄셈 결과 : \(substractOperation.substract())")
+        print("뺄셈 결과 : \(substractOperation.calculation())")
     }
     // 곱하기
     func multiplication() {
         let multiplyOperation = MultiplyOperation(num1, num2)
-        print("곱셈 결과 : \(multiplyOperation.multiplication())")
+        print("곱셈 결과 : \(multiplyOperation.calculation())")
     }
     // 나누기
     func division() {
         let divideOperation = DivideOperation(num1, num2)
-        print("나눗셈 결과 : \(divideOperation.division())")
+        print("나눗셈 결과 : \(divideOperation.calculation())")
     }
     
     // Lv2

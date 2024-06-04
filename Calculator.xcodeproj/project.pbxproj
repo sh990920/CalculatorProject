@@ -13,6 +13,7 @@
 		A246F2482C0EF25F00CCD36C /* SubstractOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A246F2472C0EF25F00CCD36C /* SubstractOperation.swift */; };
 		A246F24A2C0EF26D00CCD36C /* MultiplyOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A246F2492C0EF26D00CCD36C /* MultiplyOperation.swift */; };
 		A246F24C2C0EF27B00CCD36C /* DivideOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A246F24B2C0EF27B00CCD36C /* DivideOperation.swift */; };
+		A246F24E2C0F0CFE00CCD36C /* AbstractOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A246F24D2C0F0CFE00CCD36C /* AbstractOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,7 @@
 		A246F2472C0EF25F00CCD36C /* SubstractOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubstractOperation.swift; sourceTree = "<group>"; };
 		A246F2492C0EF26D00CCD36C /* MultiplyOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplyOperation.swift; sourceTree = "<group>"; };
 		A246F24B2C0EF27B00CCD36C /* DivideOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivideOperation.swift; sourceTree = "<group>"; };
+		A246F24D2C0F0CFE00CCD36C /* AbstractOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				A246F2472C0EF25F00CCD36C /* SubstractOperation.swift */,
 				A246F2492C0EF26D00CCD36C /* MultiplyOperation.swift */,
 				A246F24B2C0EF27B00CCD36C /* DivideOperation.swift */,
+				A246F24D2C0F0CFE00CCD36C /* AbstractOperation.swift */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A246F24E2C0F0CFE00CCD36C /* AbstractOperation.swift in Sources */,
 				A246F23D2C0DE67200CCD36C /* main.swift in Sources */,
 				A246F2462C0EF24F00CCD36C /* AddOperation.swift in Sources */,
 				A246F2442C0DE90900CCD36C /* Calculator.swift in Sources */,
