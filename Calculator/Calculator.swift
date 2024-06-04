@@ -19,22 +19,26 @@ class Calculator {
         self.num1 = num1
         self.num2 = num2
     }
-    
+    // Lv3 각각의 클래스를 생성하고 클래스간의 관계를 고려하여 Calculator 클래스와 관계 맺기
     // 더하기
     func plus() {
-        print("덧셈 결과 : \(self.num1 + self.num2)")
+        let addOperation = AddOperation(num1, num2)
+        print("덧셈 결과 : \(addOperation.add())")
     }
     // 빼기
     func minus() {
-        print("뺄셈 결과 : \(self.num1 - self.num2)")
+        let substractOperation = SubstractOperation(num1, num2)
+        print("뺄셈 결과 : \(substractOperation.substract())")
     }
     // 곱하기
     func multiplication() {
-        print("곱셈 결과 : \(self.num1 * self.num2)")
+        let multiplyOperation = MultiplyOperation(num1, num2)
+        print("곱셈 결과 : \(multiplyOperation.multiplication())")
     }
     // 나누기
     func division() {
-        print("나눗셈 결과 : \(self.num1 / self.num2)")
+        let divideOperation = DivideOperation(num1, num2)
+        print("나눗셈 결과 : \(divideOperation.division())")
     }
     
     // Lv2
@@ -42,6 +46,6 @@ class Calculator {
     
     // 나머지 연산
     func remainder() {
-        print("num1을 num2 로 나눈 나머지 : \(self.num1 % self.num2)")
+        print("첫 번째 숫자를 두 번째 숫자로 나눈 나머지 : \(self.num1 % self.num2)")
     }
 }

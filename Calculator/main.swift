@@ -29,9 +29,9 @@ import Foundation
 
 // 유의사항
 // 사용자의 입력을 직접 받아서 입력한다.
-print("첫번째 숫자를 입력하세요 : ", terminator: "")
+print("첫 번째 숫자를 입력하세요 : ", terminator: "")
 let num1 = readLine()
-print("두번째 숫자를 입력하세요 : ", terminator: "")
+print("두 번째 숫자를 입력하세요 : ", terminator: "")
 let num2 = readLine()
 
 if let num1 = Int(num1!), let num2 = Int(num2!) {
@@ -43,3 +43,8 @@ if let num1 = Int(num1!), let num2 = Int(num2!) {
     calculator.division()
     calculator.remainder()
 }
+
+// Lv2 와 비교하여 어떠한 점이 개선 되었는지 생각
+// Lv2 와 비교하였을 때 각각 계산하는 방식을 클래스로 나누어 생성했을 때
+// 계산 코드가 수정되어야 할 때 코드의 수정이 간편하다.
+// 또한 코드에서 잘못된 부분이 있을 때 찾기가 매우 쉬워진다.
