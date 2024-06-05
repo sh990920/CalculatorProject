@@ -18,6 +18,6 @@ class MultiplyOperation : AbstractOperation{
     }
     
     func calculation() -> Int {
-        return self.num1 + self.num2
+        return self.num1 * self.num2
     }
 }
