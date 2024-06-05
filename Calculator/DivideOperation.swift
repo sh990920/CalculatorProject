@@ -17,7 +17,11 @@ class DivideOperation : AbstractOperation{
         self.num2 = num2
     }
     
-    func calculation() -> Int {
-        return self.num1 / self.num2
+    func calculation() -> Any {
+        let result = Double(self.num1) / Double(self.num2)
+        if result.truncatingRemainder(dividingBy: 1) != 0 {
+            return String(format: "%.2f", result)
+        }
+        return Int(result)
     }
 }

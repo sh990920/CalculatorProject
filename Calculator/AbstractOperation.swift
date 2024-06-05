@@ -14,5 +14,5 @@ protocol AbstractOperation {
     var num1: Int { get set }
     var num2: Int { get set }
     
-    func calculation() -> Int
+    func calculation() -> Any
 }
