@@ -12,10 +12,10 @@ class Calculator {
     // 더하기, 빼기, 나누기, 곱하기 연산을 수행할 수 있는 Calculator 클래스 만들기
     
     // fix - 연산 후 출력으로 변경
-    private let num1: Int
-    private let num2: Int
+    private let num1: Double
+    private let num2: Double
     
-    init(_ num1: Int, _ num2: Int) {
+    init(_ num1: Double, _ num2: Double) {
         self.num1 = num1
         self.num2 = num2
     }
@@ -23,22 +23,43 @@ class Calculator {
     // 더하기
     func plus() {
         let addOperation = AddOperation(num1, num2)
-        print("덧셈 결과 : \(addOperation.calculation())")
+        let result = addOperation.calculation()
+        if result.truncatingRemainder(dividingBy: 1) == 0 {
+            print("덧셈 결과 : \(Int(result))")
+        } else {
+            print("덧셈 결과 : \(String(format: "%.2f", result))")
+        }
+
     }
     // 빼기
     func minus() {
         let substractOperation = SubstractOperation(num1, num2)
-        print("뺄셈 결과 : \(substractOperation.calculation())")
+        let result = substractOperation.calculation()
+        if result.truncatingRemainder(dividingBy: 1) == 0 {
+            print("뺄셈 결과 : \(Int(result))")
+        } else {
+            print("뺄셈 결과 : \(String(format: "%.2f", result))")
+        }
     }
     // 곱하기
     func multiplication() {
         let multiplyOperation = MultiplyOperation(num1, num2)
-        print("곱셈 결과 : \(multiplyOperation.calculation())")
+        let result = multiplyOperation.calculation()
+        if result.truncatingRemainder(dividingBy: 1) == 0 {
+            print("곱셈 결과 : \(Int(result))")
+        } else {
+            print("곱셈 결과 : \(String(format: "%.2f", result))")
+        }
     }
     // 나누기
     func division() {
         let divideOperation = DivideOperation(num1, num2)
-        print("나눗셈 결과 : \(divideOperation.calculation())")
+        let result = divideOperation.calculation()
+        if result.truncatingRemainder(dividingBy: 1) == 0 {
+            print("나눗셈 결과 : \(Int(result))")
+        } else {
+            print("나눗셈 결과 : \(String(format: "%.2f", result))")
+        }
     }
     
     // Lv2
@@ -46,6 +67,12 @@ class Calculator {
     
     // 나머지 연산
     func remainder() {
-        print("첫 번째 숫자를 두 번째 숫자로 나눈 나머지 : \(self.num1 % self.num2)")
+        let result = self.num1.truncatingRemainder(dividingBy: self.num2)
+        if result.truncatingRemainder(dividingBy: 1) == 0 {
+            print("첫 번째 숫자를 두 번째 숫자로 나눈 나머지 : \(Int(result))")
+        } else {
+            print("첫 번째 숫자를 두 번째 숫자로 나눈 나머지 : \(String(format: "%.2f", result))")
+        }
+        
     }
 }

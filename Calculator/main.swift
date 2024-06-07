@@ -34,7 +34,7 @@ let num1 = readLine()
 print("두 번째 숫자를 입력하세요 : ", terminator: "")
 let num2 = readLine()
 
-if let num1 = Int(num1!), let num2 = Int(num2!) {
+if let num1 = Double(num1!), let num2 = Double(num2!) {
     let calculator = Calculator(num1, num2)
     
     calculator.plus()
